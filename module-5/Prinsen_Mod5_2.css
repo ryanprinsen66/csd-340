@@ -1,0 +1,43 @@
+body {
+	background-color: #A0D8F1;
+	color: #BF381A;
+	font-family: "comic sans ms";
+	font-weight: 100px;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+H1, h2, h3 {
+	color: #0A224E;
+	text-decoration: underline;
+}
+
+#color1, #color2, #color3 {
+	text-align: center;
+}
+a:link {
+	color: #E07628;
+	text-decoration: none;
+}
+a:visited {
+	color: #E07628;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+figcaption {
+	color: #E07628;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+hr {
+	border-color: #E9AF32;
+}
+ul {
+	list-style-type: circle;
+}
