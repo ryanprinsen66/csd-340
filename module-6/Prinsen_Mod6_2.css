@@ -38,7 +38,7 @@ h1 {
 }
 .card-title {
 	text-align: center;
-	font-weight 400;
+	font-weight: 400;
 	font-size: 2em;
 	color: black;
 }
@@ -62,7 +62,7 @@ footer {
 }
 footer p {
 	color: #E4EEF7;
-	font-weight 400;
+	font-weight: 400;
 	float: right;
 	padding-right: 10px;
 	font-style: italic;
