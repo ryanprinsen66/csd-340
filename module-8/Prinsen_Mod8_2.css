@@ -1,0 +1,109 @@
+header {
+	background-color: #0D385F;
+	color: white;
+	text-align: center;
+	padding: 20px;	
+}
+h1 {
+	font-weight: 400;
+}
+#navbar {
+	background-color: #095BA5;
+	overflow: hidden;
+	border-bottom: 15px solid black;
+}
+#navbar a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 14px 16px;
+	text-align: center;
+	float: left;
+}
+#navbar a:hover {
+	color: black;
+	background-color: #3794DD;
+}
+#container {
+	margin-top: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 100px;
+	padding: 10px;
+}
+.card {
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: box-shadow .3s;
+	
+}
+.card-title {
+	text-align: center;
+	font-weight: 400;
+	font-size: 2em;
+	color: black;
+}
+.card-content {
+	padding: 2px 16px;
+}
+.card-content a {
+	color: #0D385F;
+}
+.card-content a:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-content a:visited {
+	color: #3794DD;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 30px;
+}
+th {
+	background-color: #095BA5;
+	color: white;
+	padding-left: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	border: solid 1px #ddd;
+}
+td {
+	border: solid 1px #ddd;
+	padding: 8px;
+	
+}
+li {
+	padding: 3px;
+}
+footer {
+	width: 100%;
+	position: fixed;
+	background-color: #0D385F;
+	bottom: 0;
+	left: 0;
+}
+footer p {
+	color: #E4EEF7;
+	font-weight: 400;
+	float: right;
+	padding-right: 10px;
+	font-style: italic;
+}
+footer #copyright {
+	color: #E4EEF7;
+	font-weight: 400;
+	float: left;
+	padding-left: 10px;
+	font-style: italic;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+	
