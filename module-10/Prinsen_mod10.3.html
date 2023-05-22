@@ -1,0 +1,50 @@
+<!-- Ryan Prinsen : Assignment Module 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+		  CSD 340 Development with HTML and CSS
+                </title>	
+	</head>
+	<script>
+	  function imageClick(imageFile){
+	    var onClickImage = document.getElementByID("mainImage");
+	    var newNode = document.createElement("img");
+	    var previousNode = document.createElement("img");
+	    newNode.id = "mainImage";
+	    newNode.src = imageFile;
+	    newNode.alt = "Click Image";
+	    newNode.className = "mainImage";
+	    newNode.style.width = "300px";
+	    newNode.style.height = "200px";
+	    onClickImage.parentNode.replaceChild(newNode, onClickImage);
+	  }
+	  
+	</script>
+	<link rel='stylesheet' type='text/css' href='body1.css' />
+
+	<body>
+		<div id="container">
+		  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+		  <div>
+		    <a href=#
+		      onclick="cave.src= 'images/cave_02.jpg';"
+		      ondblclick="cave.src='images/cave_01.jpg';"
+                      >
+		      <img border = 0 name = "cave" src = "images/cave_01.jpg">
+		    </a>
+		 </div>	
+		 <p>
+		   Click an image once to reveal a changed image.
+	         <p>
+		   Double click to return to back to the original image.
+		  <div>
+		    <a href=#
+		      onclick="moon.src= 'images/moon_02.jpg';"
+		      ondblclick="moon.src='images/moon_01.jpg';"
+                    >
+		      <img border = 0 name = "moon" src = "images/moon_01.jpg">
+		    </a>
+		</div>		
+	</body>
+</html>
