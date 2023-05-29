@@ -1,0 +1,78 @@
+<!-- Ryan Prinsen : Assignment Module 11.2 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+		  CSD 340 Development with HTML and CSS
+        </title>	
+	</head>
+	<link rel='stylesheet' type='text/css' href='body1.css' />
+	<body>
+		<div id="container">
+		<h1>Assignment 11.2: JavaScript - Part 3</h1>
+		<div>
+			<p>Type a task into the box. It 'Add Item' to add to list.
+			<p>To delete and item, type the task into the box or enter the number.
+			<p>
+			<input id="userInput" type="text"/>
+			<button onclick="addItem()">Add Item</button>
+			<button onclick="deleteItem()">Delete Item</button>
+			<button onclick="displayList()">Display</button>
+			<br/>
+			<p id="results"></p>
+		
+		<script>
+			const toDoList = [];	
+			function addItem(){
+				var listItem = document.getElementById('userInput').value;
+				var itemNo = 0 + toDoList.length;
+				if(listItem != ""){
+			    	toDoList[itemNo] = listItem;
+					itemNo = itemNo + 1;
+					alert(listItem + " has been added.");
+				}
+			}
+			function deleteItem(){
+				var listItemRemove = document.getElementById('userInput').value;
+				if (isNaN(listItemRemove)){
+					for(var i = 0; i < toDoList.length; i++){
+						if(toDoList[i]==listItemRemove){
+							toDoList.splice(i,1)
+							counter = counter +1;
+							alert(listItemRemove + " has been removed.");
+						}
+					}
+				}
+			    else {
+					toDoList.splice(listItemRemove-1,1);
+					alert(listItemRemove + " has been removed.");
+					}
+				}
+	
+			function displayList(){
+				results.innerHTML = null;
+				for(var i = 0; i < toDoList.length; i++){
+					results.innerHTML += "<p>"+(i+1)+". "+toDoList[i]+"</p>";
+				}
+			function deleteItem(){
+				var listItemRemove = document.getElementById('userInput').value;
+				if (isNaN(listItemRemove)){
+					for(var i = 0; i < toDoList.length; i++){
+						if(toDoList[i]==listItemRemove){
+							toDoList.splice(i,1)
+							counter = counter +1;
+							alert(listItemRemove + " has been removed.");
+						}
+					}
+				}
+			    else {
+					toDoList.splice(listItemRemove-1,1);
+					alert(listItemRemove + " has been removed.");
+					}
+				}
+	
+
+			}
+			</script>
+	</body>
+</html>
