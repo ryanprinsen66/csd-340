@@ -1,0 +1,66 @@
+<!-- Ryan Prinsen : Assignment Module 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="Prinsen_Mod12_2.css" type="text/css"/>
+		<title>CSD 340 Web Development with HTML and CSS</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Assignment 12.3: Javascript - Part 4</h1>
+			<div id="left">
+				<h3>  Top 10 Favorite Books</h3>
+				<button onclick="viewListAscending()">Top to Bottom</button>
+				<button onclick="viewListDescending()">Bottom to Top</button>
+                <div id="list">
+
+				    <ol id="topTen">
+					    <li>Harry Potter and the Sorcerer's Stone</li>
+					    <li>Harry Potter and the Chamber of Secrets</li>
+					    <li>Harry Potter and the Prisoner of Azkaban</li>
+					    <li>Harry Potter and the Goblet of Fire</li>
+					    <li>Harry Potter and the Order of the Phoenix</li>
+					    <li>Harry Potter and the Half Blood Prince</li>
+					    <li>Harry Potter and the Deathly Hallows</li>
+					    <li>The Lord of the Rings: The Fellowship of the Ring</li>
+					    <li>The Lord of the Rings: The Two Towers</li>
+					    <li>The Lord of the Rings: The Return of the King</li>
+                    </div>
+                    </ol>
+			</div>				
+			<div id="right">
+				<h3>  5 Things I’ve Learned Since the Course Started</h3>
+				<ul>
+					<li>Structuring an HTML Document</li>
+					<li>Creating Ordered/Unordered Lists</li>
+					<li>Adding Links to a Webpage</li>
+					<li>Formatting HTML through CSS</li>
+					<li>Using GitHub for Source Control</li>
+				</ul>
+			</div>
+			<div id="last">
+				<a href="https://ryanprinsen66.github.io/csd-340/">Back to Landing Page</a>
+			</div>
+		</div>
+		<script>
+			const topTenBooks =["Harry Potter and the Sorcerer's Stone","Harry Potter and the Chamber of Secrets","Harry Potter and the Prisoner of Azkaban",
+				"Harry Potter and the Goblet of Fire","Harry Potter and the Order of the Phoenix","Harry Potter and the Half Blood Prince",
+				"Harry Potter and the Deathly Hallows","The Lord of the Rings: The Fellowship of the Ring","The Lord of the Rings: The Two Towers",
+				"The Lord of the Rings: The Return of the King"];
+			function viewListAscending(){
+                document.getElementById("topTen").reversed = false;
+                topTen.innerHTML = null;
+				for (var i = 0; i < topTenBooks.length; i++){
+					topTen.innerHTML += "<li>" +topTenBooks[i]+"</li>";
+				}
+			}
+			function viewListDescending(){
+                document.getElementById("topTen").reversed = true;
+				topTen.innerHTML = null;
+				for (var i = 0; i < topTenBooks.length; i++){
+					topTen.innerHTML += "<li>"+topTenBooks[9-i]+"</li>";
+				}
+			}
+		</script>
+	</body> 
+</html>
